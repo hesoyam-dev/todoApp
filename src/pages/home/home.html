@@ -23,7 +23,7 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list [reorder]='reorderIsEnabled' (ionItemReorder)='itemReordered($event)'>
+  <ion-list *ngIf='todos.length > 0' [reorder]='reorderIsEnabled' (ionItemReorder)='itemReordered($event)'>
     <ion-item-sliding *ngFor="let todo of todos; let todoIndex = index">
       <ion-item>
         <ion-label>
@@ -44,7 +44,9 @@
       </ion-item-options>
     </ion-item-sliding>
   </ion-list>
-
+  <div class='empty_content' *ngIf='todos.length == 0'>
+    <p> <ion-icon name="add"></ion-icon>&ngsp; Add some tasks!</p>
+  </div>
   <ion-fab right bottom>
     <button ion-fab [navPush]='archivedTodosPage'>
       <ion-icon name='archive'>

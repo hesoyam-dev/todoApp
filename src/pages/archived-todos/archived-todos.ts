@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HttpClient } from '@angular/common/http';
 import { TodoProvider } from '../../providers/todo/todo';
 /**
  * Generated class for the ArchivedTodosPage page.

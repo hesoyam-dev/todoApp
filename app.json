@@ -1,0 +1,7 @@
+{
+       "name": "todoApp",
+       "description": "Cool app for creating tasks",
+       "repository": "https://github.com/oleg1998/todoApp",
+       "logo": "",
+       "keywords": ["ionic3", "heroku", "oleg1998"]
+   }
